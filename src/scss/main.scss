@@ -1,0 +1,92 @@
+/*********************************
+ * Reset
+ *********************************/
+*{
+  box-sizing: border-box;
+}
+
+body, html{
+  padding: 0;
+  margin: 0;
+  font-family: 'Arial';
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+/*********************************
+ * Nested Menu
+ *********************************/
+#menu{
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+}
+
+#menu, #menu ul{
+  background: #333;
+}
+
+#menu a {
+  color: #FFF;
+  font-weight: 700;
+  display: block;
+  padding: 1em;
+}
+
+#menu a:hover:not(.back-nav) {
+  background: #22222259;
+}
+
+#menu .back-nav{
+  cursor: pointer;
+  display: block;
+  padding-left: 35px;
+  background: #222;
+}
+
+#menu .back-nav::before {
+  position: absolute;
+  content: "\2039";
+  left: 15px;
+  font-size: 24px;
+  top: 10px;
+}
+
+#menu .subnav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  transform: translate3d(100%, 0, 0);
+  transition: transform 0.5s;
+}
+
+#menu .has-subnav > a {
+  position: relative;
+}
+
+#menu .has-subnav>a::before {
+  position: absolute;
+  display: block;
+  color: white;
+  content: "\203A";
+  right: 15px;
+  font-size: 24px;
+  top: 10px;
+}
+
+#menu .subnav.active {
+  transform: translate3d(0, 0, 0);
+}
