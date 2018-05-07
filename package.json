@@ -4,7 +4,8 @@
   "description": "Simple responsive nested navigation. Easy to implement",
   "main": "script.js",
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/Keized/nested-menu.git"
   },
   "keywords": [
     "javascript",
