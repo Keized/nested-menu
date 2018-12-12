@@ -10,7 +10,7 @@
 			<li><a href="">Link</a></li>
 			<li>
 				<a href="#">Menu 1</a>
-				<ul class="subnav">
+				<ul class="submenu">
 					<li>
 						<a href="#">Link 1</a>
 					</li>
@@ -21,13 +21,13 @@
 			</li>
 			<li>
 				<a href="#">Menu 2</a>
-				<ul class="subnav">
+				<ul class="submenu">
 					<li>
 						<a href="#">Link 2</a>
 					</li>
 					<li>
 						<a href="#">Menu 2-1</a>
-						<ul class="subnav">
+						<ul class="submenu">
 							<li>
 								<a href="#">Link 2-1</a>
 							</li>
@@ -41,13 +41,13 @@
 		</ul>
 	</nav>
 
-<script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+
   <script type="text/javascript" src="../dist/nestedMenu.js"></script>
   <script>
-	  nestedMenu('#menu');
+
+	  nestedMenu = new NestedMenu('#menu', {
+        subMenuSelector: '.submenu'
+	  });
   </script>
 </body>
 </html>

@@ -4,7 +4,7 @@ module.exports = {
   entry: './index.js',
   output: {
     filename: 'nestedMenu.js',
-    library: 'nestedMenu',
+    library: 'NestedMenu',
     libraryTarget: 'var'
   },
   module: {
